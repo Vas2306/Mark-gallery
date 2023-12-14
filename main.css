@@ -1,7 +1,4 @@
-.responsive {
-    max-width: 100%;
-    height: auto;
-}
+
 .container {
     overflow: hidden;
 }
@@ -9,16 +6,9 @@
 .filterDiv {
     max-width: 100%;
         height: auto;
-    /* float: left;
-    background-color: #2196F3;
-    color: #ffffff;
-    width: 100px;
-    line-height: 100px;
-    text-align: center;
-    margin: 2px; */
     display: none;
    margin-bottom: 5px;
-    /* Скрыто по умолчанию */
+  
 }
 
 /* В класс "show" добавляется к отфильтрованные элементы */

@@ -1,32 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
     <!-- Control buttons -->
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Показать все</button>
-  <button class="btn" onclick="filterSelection('born')">Рождение</button>
-  <button class="btn" onclick="filterSelection('animals')"> Животные</button>
-  <button class="btn" onclick="filterSelection('fruits')"> Фрукты</button>
-  <button class="btn" onclick="filterSelection('colors')"> Цветы</button>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">
+        Показать все
+      </button>
+      <button class="btn" onclick="filterSelection('born')">Рождение</button>
+      <button class="btn" onclick="filterSelection('age')">Растем</button>
+      <button class="btn" onclick="filterSelection('emotion')">Эмоции</button>
+      <button class="btn" onclick="filterSelection('dream')">Сон</button>
+      <button class="btn" onclick="filterSelection('christening')">
+        Крестины
+      </button>
+      <button class="btn" onclick="filterSelection('mother')">С мамой</button>
+      <button class="btn" onclick="filterSelection('father')">С папой</button>
+      <button class="btn" onclick="filterSelection('parents')">Родители</button>
+
+      <button class="btn" onclick="filterSelection('aunt')">С тетей</button>
+    </div>
+
+    <!-- Фильтруемые элементы. Примечание что некоторые из них имеют несколько имен классов (это может быть использовано, если они принадлежат к нескольким категориям) -->
+    <div class="container">
+      <img src="images/3-мес-006-min.JPG" alt="" class="filterDiv age" />
+      <img src="images/001-min.JPG" alt="" class="filterDiv age" />
+      <img src="images/002-min.JPG" alt="" class="filterDiv age" />
+      <img src="images/003-min.JPG" alt="" class="filterDiv age" />
+      <img src="images/004-min.JPG" alt="" class="filterDiv age" />
+      <img src="images/005-min.JPG" alt="" class="filterDiv age" />
+      <img src="images/009-min.JPG" alt="" class="filterDiv age" />
+      <img src="images/016-min.JPG" alt="" class="filterDiv age" />
+      <img src="images/017-min.JPG" alt="" class="filterDiv age" />
+      <img src="images/018-min.JPG" alt="" class="filterDiv age" />
+      <img src="images/3-мес-002-min.jpg" alt="" class="filterDiv age" />
+
+      <img src="images/057-min.jpg" alt="" class="filterDiv emotion" />
+      <img src="images/058-min.jpg" alt="" class="filterDiv emotion" />
+      <img src="images/062-min.jpg" alt="" class="filterDiv emotion" />
+      <img src="images/063-min.jpg" alt="" class="filterDiv emotion" />
+      <img src="images/064-min.jpg" alt="" class="filterDiv emotion" />
+      <img src="images/065-min.jpg" alt="" class="filterDiv emotion" />
+      <img src="images/066-min.jpg" alt="" class="filterDiv emotion" />
+      <img src="images/068-min.jpg" alt="" class="filterDiv emotion" />
+      <img src="images/3-мес-001-min.jpg" alt="" class="filterDiv emotion" />
+      <img src="images/069-min.jpg" alt="" class="filterDiv emotion" />
+      <img src="images/070-min.jpg" alt="" class="filterDiv emotion" />
+
+      <img src="images/013-min.jpg" alt="" class="filterDiv parents" />
+      <img src="images/014-min.jpg" alt="" class="filterDiv parents" />
+      <img src="images/015-min.jpg" alt="" class="filterDiv parents" />
+      <img src="images/3-мес-004-min.jpg" alt="" class="filterDiv parents" />
+
+      <img src="images/085-min.jpg" alt="" class="filterDiv dream" />
+      <img src="images/086-min.jpg" alt="" class="filterDiv dream" />
+      <img src="images/087-min.jpg" alt="" class="filterDiv dream" />
+      <img src="images/088-min.jpg" alt="" class="filterDiv dream" />
+      <img src="images/089-min.jpg" alt="" class="filterDiv dream" />
+      <img src="images/090-min.jpg" alt="" class="filterDiv dream" />
+      <img src="images/091-min.jpg" alt="" class="filterDiv dream" />
+      <img src="images/092-min.jpg" alt="" class="filterDiv dream" />
+      <img src="images/093-min.jpg" alt="" class="filterDiv dream" />
+      <img src="images/094-min.jpg" alt="" class="filterDiv dream" />
+      <img src="images/095-min.jpg" alt="" class="filterDiv dream" />
+      <img src="images/096-min.jpg" alt="" class="filterDiv dream" />
+      <img src="images/097-min.jpg" alt="" class="filterDiv dream" />
+
+      <img src="images/020-min.jpg" alt="" class="filterDiv born" />
+      <img src="images/021-min.jpg" alt="" class="filterDiv born" />
+      <img src="images/022-min.jpg" alt="" class="filterDiv born" />
+      <img src="images/023-min.jpg" alt="" class="filterDiv born" />
+      <img src="images/024-min.jpg" alt="" class="filterDiv born" />
+      <img src="images/025-min.jpg" alt="" class="filterDiv born" />
+      <img src="images/026-min.jpg" alt="" class="filterDiv born" />
+      <img src="images/027-min.jpg" alt="" class="filterDiv born" />
+      <img src="images/029-min.jpg" alt="" class="filterDiv born" />
+      <img src="images/030-min.jpg" alt="" class="filterDiv born" />
+      <img src="images/031-min.jpg" alt="" class="filterDiv born" />
+      <img src="images/3-мес-003-min.jpg" alt="" class="filterDiv born" />
+
+      <img src="images/077-min.jpg" alt="" class="filterDiv mother" />
+      <img src="images/078-min.jpg" alt="" class="filterDiv mother" />
+      <img src="images/079-min.jpg" alt="" class="filterDiv mother" />
+
+
+      <img src="images/071-min.jpg" alt="" class="filterDiv father" />
+      <img src="images/072-min.jpg" alt="" class="filterDiv father" />
+      <img src="images/073-min.jpg" alt="" class="filterDiv father" />
+      <img src="images/074-min.jpg" alt="" class="filterDiv father" />
+      <img src="images/075-min.jpg" alt="" class="filterDiv father" />
+
+<img src="images/080-min.jpg" alt="" class="filterDiv aunt" />
+<img src="images/081-min.jpg" alt="" class="filterDiv aunt" />
+<img src="images/3-мес-007-min.JPG" alt="" class="filterDiv aunt" />
+
+<img src="images/032-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/034-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/035-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/036-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/037-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/038-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/039-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/041-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/042-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/044-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/045-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/046-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/047-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/а-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/048-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/049-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/051-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/052-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/053-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/054-min.jpg" alt="" class="filterDiv christening" />
+<img src="images/055-min.jpg" alt="" class="filterDiv christening" />
+
 </div>
 
-<!-- Фильтруемые элементы. Примечание что некоторые из них имеют несколько имен классов (это может быть использовано, если они принадлежат к нескольким категориям) -->
-<div class="container">
-    <img src="images/020.jpg" alt="" class="filterDiv born">
-    <img src="images/021.jpg" alt="" class="filterDiv born">
-    <img src="images/022.jpg" alt="" class="filterDiv born">
-    <img src="images/023.jpg" alt="" class="filterDiv born">
-    <img src="" alt="" class="filterDiv born">
-    <img src="" alt="" class="filterDiv born">
-    <img src="" alt="" class="filterDiv born">
-</div>
-<script defer src="index.js"></script>
-</body>
+
+    <script defer src="index.js"></script>
+  </body>
 </html>
